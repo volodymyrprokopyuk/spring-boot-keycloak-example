@@ -1,4 +1,4 @@
-package org.vld.template;
+package org.vld.template
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory

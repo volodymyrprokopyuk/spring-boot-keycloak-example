@@ -11,13 +11,19 @@ class WebController {
     @GetMapping("/")
     fun home(model: Model): String {
         model.addAttribute("title", "Home")
-        return "home"
+        return "index"
     }
 
-    @GetMapping("/protected")
-    fun protected(model: Model): String {
-        model.addAttribute("title", "Protected")
-        return "protected"
+    @GetMapping("/products")
+    fun products(model: Model): String {
+        model.addAttribute("title", "Products")
+        return "products"
+    }
+
+    @GetMapping("/customers")
+    fun customers(model: Model): String {
+        model.addAttribute("title", "Customers")
+        return "customers"
     }
 
     @GetMapping("/logout")

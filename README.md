@@ -1,7 +1,9 @@
-# Spring Boot Keycloak Example
+# Spring Boot Keycloak Web Application Example
 
-1. Create a Realm: ApplicationRealm
-1. Create a Client in the Realm: WebApplication + Redirect Root URL: http://localhost:8090/*
-1. Create a Role: Protected
-1. Create a User: Vlad + Password
-1. Assign the Role to the User: Protected > Vlad
+1. Create Realm: WebApplication (container for Users / Roles and Clients)
+1. Create Clients:
+    1. ApiClient + Redirect Root URL: http://localhost:8081/api
+    1. WebClient + Redirect Root URL: http://localhost:8082
+1. Create Roles: ProductReader, CustomerReader
+1. Create Users: Vlad, Svit
+1. Assign Roles to Users: Vlad < ProductReader, Svit < CustomerReader

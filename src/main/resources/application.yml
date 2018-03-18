@@ -2,4 +2,4 @@ logging:
     level:
         org.vld.template: DEBUG
 server:
-    port: 8090
+    port: 8082

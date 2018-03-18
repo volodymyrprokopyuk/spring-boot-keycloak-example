@@ -39,6 +39,6 @@ dependencies {
     compile("org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
     compile("org.springframework.boot:spring-boot-starter-thymeleaf:$springBootVersion")
-    compile("org.keycloak:keycloak-spring-boot-starter:$keycloakVersion")
     compile("org.springframework.boot:spring-boot-starter-security:$springBootVersion")
+    compile("org.keycloak:keycloak-spring-boot-starter:$keycloakVersion")
 }

@@ -33,7 +33,9 @@ open class KeycloakConfiguration : KeycloakWebSecurityConfigurerAdapter() {
     override fun configure(http: HttpSecurity?) {
         super.configure(http)
         http
-                ?.authorizeRequests()?.antMatchers("/protected")?.hasRole("Protected")
+                ?.authorizeRequests()
+                ?.antMatchers("/products*")?.hasRole("ProductReader")
+                ?.antMatchers("/customers*")?.hasRole("CustomerReader")
                 ?.anyRequest()?.permitAll()
     }
 }
