@@ -4,7 +4,7 @@
 1. Create Clients:
     1. ApiClient
         1. Redirect Root URL: http://localhost:8081/api
-        1. Access Type: confidential
+        1. Access Type: confidential, Service Account Enabled
     1. WebClient
         1. Redirect Root URL: http://localhost:8082
         1. Access Type: public

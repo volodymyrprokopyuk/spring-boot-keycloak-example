@@ -3,10 +3,12 @@ package org.vld.template.controller
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
+import org.vld.template.service.CustomerService
+import org.vld.template.service.ProductService
 import javax.servlet.http.HttpServletRequest
 
 @Controller
-class WebController {
+class WebController(private val productService: ProductService, private val customerService: CustomerService) {
 
     @GetMapping("/")
     fun home(model: Model): String {
@@ -16,13 +18,13 @@ class WebController {
 
     @GetMapping("/products")
     fun products(model: Model): String {
-        model.addAttribute("title", "Products")
+        model.addAttribute("title", productService.findAll())
         return "products"
     }
 
     @GetMapping("/customers")
     fun customers(model: Model): String {
-        model.addAttribute("title", "Customers")
+        model.addAttribute("title", customerService.findAll())
         return "customers"
     }
 
