@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinGradlePluginVersion = "1.2.30"
+        kotlinGradlePluginVersion = "1.2.51"
         springBootGradlePluginVersion = "1.5.10.RELEASE"
     }
 
@@ -25,7 +25,7 @@ springBoot {
 version = "0.1.0"
 
 ext {
-    kotlinVersion = "1.2.30"
+    kotlinVersion = "1.2.51"
     springBootVersion = "1.5.10.RELEASE"
     keycloakVersion = "3.4.3.Final"
     springSecurityOAuth2Version = "2.3.0.RELEASE"
