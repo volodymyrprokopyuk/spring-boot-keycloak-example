@@ -8,15 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.vld.template.configuration.KeycloakConfiguration
 
 @SpringBootApplication
-open class Application : CommandLineRunner {
-
-    companion object {
-        val logger: Logger = LoggerFactory.getLogger(KeycloakConfiguration::class.java)
-    }
-
-    override fun run(vararg args: String?) {
-        logger.debug("ok")
-    }
-}
+open class Application
 
 fun main(args: Array<String>) = SpringApplication.run(Application::class.java, *args)
